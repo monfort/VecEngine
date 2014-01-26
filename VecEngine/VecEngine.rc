@@ -1,0 +1,154 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TEXT_EDIT_RECT DIALOGEX 0, 0, 186, 95
+STYLE WS_POPUP | WS_BORDER
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_TEXT_CTRL,0,0,185,94,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CROP_CURSOR         CURSOR  DISCARDABLE     "res\\crop_cur.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOCKED_OBJ_ICON     BITMAP  DISCARDABLE     "res\\locked.bmp"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Unknown language: 0xD, 0x1 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HEB)
+#ifdef _WIN32
+LANGUAGE 0xD, 0x1
+#pragma code_page(1255)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_ROTATE              CURSOR  DISCARDABLE     "res\\my_move_.cur"
+IDC_SET_SELECTED        CURSOR  DISCARDABLE     "res\\my_set_s.cur"
+IDC_CREATE_CURSOR       CURSOR  DISCARDABLE     "res\\create_c.cur"
+IDC_TRACKNESW           CURSOR  DISCARDABLE     "res\\Trcknesw.cur"
+IDC_TRACK4WAY           CURSOR  DISCARDABLE     "res\\Trck4way.cur"
+IDC_MOVE4WAY            CURSOR  DISCARDABLE     "res\\Copy4way.cur"
+IDC_TRACKNS             CURSOR  DISCARDABLE     "res\\Trckns.cur"
+IDC_TRACKNWSE           CURSOR  DISCARDABLE     "res\\Trcknwse.cur"
+IDC_TRACKWE             CURSOR  DISCARDABLE     "res\\Trckwe.cur"
+IDC_PAN                 CURSOR  DISCARDABLE     "res\\pan.cur"
+IDC_ZOOM_IN             CURSOR  DISCARDABLE     "res\\zoom_in.cur"
+IDC_PAN_ACT             CURSOR  DISCARDABLE     "res\\pan_act.cur"
+IDC_ZOOM_OUT            CURSOR  DISCARDABLE     "res\\zoom_out.cur"
+IDC_PIC_RESIZE          CURSOR  DISCARDABLE     "res\\pic_resi.cur"
+IDC_GUIDE_HORZ          CURSOR  DISCARDABLE     "res\\guide_ho.cur"
+IDC_GUIDE_VERT          CURSOR  DISCARDABLE     "res\\guide_ve.cur"
+IDC_PIC_MOVE            CURSOR  DISCARDABLE     "res\\pic_move.cur"
+IDC_PIC_ROTATE          CURSOR  DISCARDABLE     "res\\pic_rota.cur"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\VecEngine.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Unknown language: 0xD, 0x1 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\VecEngine.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

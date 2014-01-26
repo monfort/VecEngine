@@ -1,0 +1,10 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by Pas.rc
+//
+#define HIDC_NOTE2                      0x81300460    // IDD_IMPORT_CD [English (U.S.)]
+#define HIDC_NOTE3                      0x813a045c    // IDD_NEW_COLL2 [English (U.S.)]
+#define HIDC_SHORT_CUT                  0x810f0444    // IDD_BROWSE_GEN [English (U.S.)]
+#define HIDC_STATIC                     0x8133ffff    // IDD_DRIVE_DETECTED
+#define HIDC_STATIC_NOTE                0x81350456    // IDD_IMPORT_CD1 [English (U.S.)]
+#define HIDC_STATIC_NOTE2               0x81390457    // IDD_NEW_COLL1 [English (U.S.)]
+#define HIDC_STATIC_NOTE3               0x81390458    // IDD_NEW_COLL1 [English (U.S.)]

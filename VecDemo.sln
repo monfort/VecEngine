@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestApp", "VecEngine\TestApp\TestApp.vcxproj", "{95E82175-EA54-4DD5-9D7E-A3E5AAEA7DAF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VecDemo", "VecDemo\VecDemo.vcxproj", "{35711B93-25AC-4B07-B8DF-7D29132FF662}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VecEngineLib", "VecEngine\VecEngineLib\VecEngineLib.vcxproj", "{03D08D26-1C95-4DD3-9A4D-C3AB6F05829E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95E82175-EA54-4DD5-9D7E-A3E5AAEA7DAF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{95E82175-EA54-4DD5-9D7E-A3E5AAEA7DAF}.Debug|Win32.Build.0 = Debug|Win32
+		{95E82175-EA54-4DD5-9D7E-A3E5AAEA7DAF}.Release|Win32.ActiveCfg = Release|Win32
+		{95E82175-EA54-4DD5-9D7E-A3E5AAEA7DAF}.Release|Win32.Build.0 = Release|Win32
+		{35711B93-25AC-4B07-B8DF-7D29132FF662}.Debug|Win32.ActiveCfg = Debug|Win32
+		{35711B93-25AC-4B07-B8DF-7D29132FF662}.Debug|Win32.Build.0 = Debug|Win32
+		{35711B93-25AC-4B07-B8DF-7D29132FF662}.Release|Win32.ActiveCfg = Release|Win32
+		{35711B93-25AC-4B07-B8DF-7D29132FF662}.Release|Win32.Build.0 = Release|Win32
+		{03D08D26-1C95-4DD3-9A4D-C3AB6F05829E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{03D08D26-1C95-4DD3-9A4D-C3AB6F05829E}.Debug|Win32.Build.0 = Debug|Win32
+		{03D08D26-1C95-4DD3-9A4D-C3AB6F05829E}.Release|Win32.ActiveCfg = Release|Win32
+		{03D08D26-1C95-4DD3-9A4D-C3AB6F05829E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1392 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\VecDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_TOOLBOX             BITMAP                  "res\\toolbox.bmp"
+IDR_TOOLBAR_PAGE        BITMAP                  "res\\toolbar_page.bmp"
+IDR_TOOLBAR_OBJECT      BITMAP                  "res\\toolbar_Object.bmp"
+IDB_SHAPES_BITMAP       BITMAP                  "res\\shapes_b.bmp"
+IDR_TOOLBAR_ALIGN       BITMAP                  "res\\toolbar_align.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    BUTTON      ID_EDIT_DELETE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_TOOLBOX TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_TOOL_SELECT
+    BUTTON      ID_TOOL_DRAG_DROP
+    BUTTON      ID_TOOL_ROTATE
+    SEPARATOR
+    BUTTON      ID_TOOL_TEXT
+    BUTTON      ID_TOOL_LINE
+    BUTTON      ID_TOOL_ELLIPSE
+    BUTTON      ID_TOOL_RECT
+    BUTTON      ID_TOOL_POLYLINE
+    BUTTON      ID_TOOL_POLYGON
+    BUTTON      ID_TOOL_FREEHAND
+    BUTTON      ID_TOOL_FREEHAND_CLOSED
+    BUTTON      ID_TOOL_SHAPE
+    SEPARATOR
+    BUTTON      ID_TOOL_ZOOM_RECT
+    BUTTON      ID_TOOL_PANIMAGE
+END
+
+IDR_TOOLBAR_PAGE TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_PAGE_BACKGROUND
+    BUTTON      ID_PAGE_FITTOWINDOW
+    BUTTON      ID_PAGE_FITTOHEIGHT
+    BUTTON      ID_PAGE_FITTOWIDTH
+    BUTTON      ID_PAGE_ZOOMIN
+    BUTTON      ID_PAGE_ZOOMOUT
+    BUTTON      ID_PAGE_RESETZOOM
+    SEPARATOR
+    BUTTON      ID_VIEW_RULLERS
+    BUTTON      ID_VIEW_GRID
+    BUTTON      ID_VIEW_SNAP2GRID
+    BUTTON      ID_VIEW_GUIDES
+    BUTTON      ID_VIEW_SNAP2GUIDES
+END
+
+IDR_TOOLBAR_OBJECT TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_ORDER_BRINGTOFRONT
+    BUTTON      ID_ORDER_SENDTOBACK
+    BUTTON      ID_ORDER_SENDONEFORE
+    BUTTON      ID_ORDER_SENDONEBACK
+    BUTTON      ID_GROUP_GROUP
+    BUTTON      ID_GROUP_UNGROUP
+    SEPARATOR
+    BUTTON      ID_PICTURE_FLIP_HORIZONTAL
+    BUTTON      ID_PICTURE_FLIP_VERTICAL
+    SEPARATOR
+    BUTTON      ID_PICTURE_ROTATE_180
+    BUTTON      ID_PICTURE_ROTATE_90CCW
+    BUTTON      ID_PICTURE_ROTATE_90CW
+    BUTTON      ID_PICTURE_ROTATE_FREE
+    SEPARATOR
+    BUTTON      ID_OBJECT_BACKCOLOR
+    BUTTON      ID_OBJECT_FORECOLOR
+    BUTTON      ID_SHAPE_FILL
+    BUTTON      ID_LINE_LINE
+    BUTTON      ID_OBJECT_PICTURE_SHADOW
+    SEPARATOR
+    BUTTON      ID_PICTURE_CROP_RECTANGLE
+    BUTTON      ID_PICTURE_CROP_ELLIPSE
+    BUTTON      ID_PICTURE_CROP_POLYGON
+    BUTTON      ID_PICTURE_CROP_FREEHAND
+    BUTTON      ID_PICTURE_CROP_SHAPE
+    SEPARATOR
+    BUTTON      ID_TEXT_EDITTEXT
+    BUTTON      ID_TEXT_FONT
+    BUTTON      ID_OBJECT_TEXT_ALIGNLEFT
+    BUTTON      ID_OBJECT_TEXT_ALIGNCENTER
+    BUTTON      ID_OBJECT_TEXT_ALIGNRIGHT
+    SEPARATOR
+    BUTTON      ID_OBJECT_PICTURE_TRANSPARENCY
+END
+
+IDR_TOOLBAR_ALIGN TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_OBJECT_ALIGN_LEFT
+    BUTTON      ID_OBJECT_ALIGN_CENTER
+    BUTTON      ID_OBJECT_ALIGN_RIGHT
+    BUTTON      ID_OBJECT_ALIGN_TOP
+    BUTTON      ID_OBJECT_ALIGN_MIDDLE
+    BUTTON      ID_OBJECT_ALIGN_BOTTOM
+    BUTTON      ID_OBJECT_ALIGN_DISTRIBUTEHORIZONTALLY
+    BUTTON      ID_OBJECT_ALIGN_DISTRIBUTEVERTICALLY
+    BUTTON      ID_OBJECT_ALIGN_LOCKOBJECT
+    BUTTON      ID_OBJECT_ALIGN_UNLOCK
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT_DISABLE, GRAYED
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW_DISABLE, GRAYED
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP_DISABLE, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Select All\t Ctrl+A",         ID_EDIT_SELECTALL
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "&Standard",                   ID_VIEW_TOOLBARS_STANDARD
+            MENUITEM "&Page",                       ID_VIEW_TOOLBARS_PAGE
+            MENUITEM "&Object",                     ID_VIEW_TOOLBARS_OBJECT
+            MENUITEM "Ali&gn",                      ID_VIEW_TOOLBARS_ALIGN
+            MENUITEM "Tool &Box",                   ID_VIEW_TOOLBARS_TOOLBOX
+        END
+        POPUP "Tools"
+        BEGIN
+            MENUITEM "Select / Modify \t1",         ID_TOOL_SELECT
+            MENUITEM "Drag and Drop\t2",            ID_TOOL_DRAG_DROP
+            MENUITEM "Rotate\t3",                   ID_TOOL_ROTATE
+            MENUITEM SEPARATOR
+            MENUITEM "Text\t4",                     ID_TOOL_TEXT
+            MENUITEM "Line\t5",                     ID_TOOL_LINE
+            MENUITEM "Ellipse\t6",                  ID_TOOL_ELLIPSE
+            MENUITEM "Rectangle\t7",                ID_TOOL_RECT
+            MENUITEM "Polyline\t8",                 ID_TOOL_POLYLINE
+            MENUITEM "Polygon\t9",                  ID_TOOL_POLYGON
+            MENUITEM "Freehand\t0",                 ID_TOOL_FREEHAND
+            MENUITEM "Closed Freehand\t-",          ID_TOOL_FREEHAND_CLOSED
+            MENUITEM "Shape\t=",                    ID_TOOL_SHAPE
+            MENUITEM SEPARATOR
+            MENUITEM "Zoom \tQ",                    ID_TOOL_ZOOM_RECT
+            MENUITEM "Pan \tW",                     ID_TOOL_PANIMAGE
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Page"
+    BEGIN
+        MENUITEM "&Background...",              ID_PAGE_BACKGROUND
+        MENUITEM SEPARATOR
+        MENUITEM "&Reset Zoom\tCtrl+T",         ID_PAGE_RESETZOOM
+        MENUITEM "Zoom &In\tCtrl+Plus",         ID_PAGE_ZOOMIN
+        MENUITEM "Zoom &Out\tCtrl+Minus",       ID_PAGE_ZOOMOUT
+        MENUITEM "&Fit To Window\tCtrl+W",      ID_PAGE_FITTOWINDOW
+        MENUITEM "Fit To &Width\tCtrl+E",       ID_PAGE_FITTOWIDTH
+        MENUITEM "&Fit To &Height\tCtrl+D",     ID_PAGE_FITTOHEIGHT
+        MENUITEM SEPARATOR
+        MENUITEM "Show Rulers\tCtrl+R",         ID_VIEW_RULLERS
+        MENUITEM "Show Grid\tCtrl+[",           ID_VIEW_GRID
+        MENUITEM "Snap To Grid\tCtrl+]",        ID_VIEW_SNAP2GRID
+        MENUITEM "Grid Properties...",          ID_VIEW_GRID_PROPERTIES
+        MENUITEM "Show Guides\tCtrl+9",         ID_VIEW_GUIDES
+        MENUITEM "Snap To Guides\tCtrl+0",      ID_VIEW_SNAP2GUIDES
+        MENUITEM "Lock Guides\tCtrl+8",         ID_VIEW_LOCK_GUIDES
+    END
+    POPUP "&Object"
+    BEGIN
+        POPUP "Picture"
+        BEGIN
+            POPUP "&Crop"
+            BEGIN
+                MENUITEM "&Rectangle",                  ID_PICTURE_CROP_RECTANGLE
+                MENUITEM "&Ellipse",                    ID_PICTURE_CROP_ELLIPSE
+                MENUITEM "&Polygon",                    ID_PICTURE_CROP_POLYGON
+                MENUITEM "&Freehand",                   ID_PICTURE_CROP_FREEHAND
+                MENUITEM "&Shape",                      ID_PICTURE_CROP_SHAPE
+            END
+            MENUITEM "&Transparency...",            ID_OBJECT_PICTURE_TRANSPARENCY
+            MENUITEM "&Size...",                    ID_PICTURE_SIZE
+            MENUITEM "&Show Points",                ID_SHAPE_SHOWPOINTS
+            MENUITEM "S&hadow...",                  ID_OBJECT_PICTURE_SHADOW
+        END
+        POPUP "Text"
+        BEGIN
+            MENUITEM "&Edit Text...",               ID_TEXT_EDITTEXT
+            MENUITEM "&Font",                       ID_TEXT_FONT
+            POPUP "Justify"
+            BEGIN
+                MENUITEM "Align Left",                  ID_OBJECT_TEXT_ALIGNLEFT
+                MENUITEM "Align Center",                ID_OBJECT_TEXT_ALIGNCENTER
+                MENUITEM "Align Right",                 ID_OBJECT_TEXT_ALIGNRIGHT
+            END
+            MENUITEM "&Back Color...",              ID_OBJECT_BACKCOLOR
+            MENUITEM "&Fore Color...",              ID_OBJECT_FORECOLOR
+            MENUITEM "&Fill...",                    ID_SHAPE_FILL
+            MENUITEM "&Size...",                    ID_PICTURE_SIZE
+            MENUITEM "&Show Points",                ID_SHAPE_SHOWPOINTS
+            MENUITEM "S&hadow...",                  ID_OBJECT_PICTURE_SHADOW
+        END
+        POPUP "Line"
+        BEGIN
+            MENUITEM "&Line Type...",               ID_LINE_LINE
+            MENUITEM "&Back Color...",              ID_OBJECT_BACKCOLOR
+            MENUITEM "&Fore Color...",              ID_OBJECT_FORECOLOR
+            MENUITEM "&Fill...",                    ID_SHAPE_FILL
+            MENUITEM "&Size...",                    ID_PICTURE_SIZE
+            MENUITEM "&Show Points",                ID_SHAPE_SHOWPOINTS
+            MENUITEM "S&hadow...",                  ID_OBJECT_PICTURE_SHADOW
+        END
+        POPUP "Shape"
+        BEGIN
+            MENUITEM "&Back Color...",              ID_OBJECT_BACKCOLOR
+            MENUITEM "&Fore Color...",              ID_OBJECT_FORECOLOR
+            MENUITEM "&Line Type...",               ID_LINE_LINE
+            MENUITEM "&Fill...",                    ID_SHAPE_FILL
+            MENUITEM "&Size...",                    ID_PICTURE_SIZE
+            MENUITEM "&Show Points",                ID_SHAPE_SHOWPOINTS
+            MENUITEM "S&hadow...",                  ID_OBJECT_PICTURE_SHADOW
+        END
+        POPUP "&Rotate and Flip"
+        BEGIN
+            MENUITEM "90 &CW",                      ID_PICTURE_ROTATE_90CW
+            MENUITEM "90 CC&W",                     ID_PICTURE_ROTATE_90CCW
+            MENUITEM "&180",                        ID_PICTURE_ROTATE_180
+            MENUITEM "&Free",                       ID_PICTURE_ROTATE_FREE
+            MENUITEM SEPARATOR
+            MENUITEM "&Horizontal",                 ID_PICTURE_FLIP_HORIZONTAL
+            MENUITEM "&Vertical",                   ID_PICTURE_FLIP_VERTICAL
+        END
+        POPUP "&Order and Group"
+        BEGIN
+            MENUITEM "&Send to back",               ID_ORDER_SENDTOBACK
+            MENUITEM "&Bring to front",             ID_ORDER_BRINGTOFRONT
+            MENUITEM "Send Ba&ckward",              ID_ORDER_SENDONEBACK
+            MENUITEM "Bring &Forward",              ID_ORDER_SENDONEFORE
+            MENUITEM SEPARATOR
+            MENUITEM "&Group\tCtrl+G",              ID_GROUP_GROUP
+            MENUITEM "&Ungroup\tCtrl+Shift+G",      ID_GROUP_UNGROUP
+        END
+        POPUP "&Align"
+        BEGIN
+            MENUITEM "&Left",                       ID_OBJECT_ALIGN_LEFT
+            MENUITEM "&Center",                     ID_OBJECT_ALIGN_CENTER
+            MENUITEM "Right",                       ID_OBJECT_ALIGN_RIGHT
+            MENUITEM "&Top",                        ID_OBJECT_ALIGN_TOP
+            MENUITEM "&middle",                     ID_OBJECT_ALIGN_MIDDLE
+            MENUITEM "&Bottom",                     ID_OBJECT_ALIGN_BOTTOM
+            MENUITEM "Distribute &Horizontally",    ID_OBJECT_ALIGN_DISTRIBUTEHORIZONTALLY
+            MENUITEM "Distribute &Vertically",      ID_OBJECT_ALIGN_DISTRIBUTEVERTICALLY
+            MENUITEM "Loc&k\tCtrl+L",               ID_OBJECT_ALIGN_LOCKOBJECT
+            MENUITEM "&Unlock\tCtrl+Shift+L",       ID_OBJECT_ALIGN_UNLOCK
+        END
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Vector Engine Test...", ID_APP_ABOUT
+        MENUITEM "&Help...",                    ID_HELP
+    END
+END
+
+IDR_ITEM_MENU MENU 
+BEGIN
+    POPUP "Picture"
+    BEGIN
+        POPUP "&Crop"
+        BEGIN
+            MENUITEM "&Rectangle",                  ID_PICTURE_CROP_RECTANGLE
+            MENUITEM "&Ellipse",                    ID_PICTURE_CROP_ELLIPSE
+            MENUITEM "&Polygon",                    ID_PICTURE_CROP_POLYGON
+            MENUITEM "&Freehand",                   ID_PICTURE_CROP_FREEHAND
+            MENUITEM "&Shape",                      ID_PICTURE_CROP_SHAPE
+        END
+        MENUITEM "&Transparency...",            ID_OBJECT_PICTURE_TRANSPARENCY
+        MENUITEM "&Size...",                    ID_PICTURE_SIZE
+        MENUITEM "&Show Points",                ID_SHAPE_SHOWPOINTS
+        MENUITEM "S&hadow...",                  ID_OBJECT_PICTURE_SHADOW
+        POPUP "&Rotate and Flip"
+        BEGIN
+            MENUITEM "90 &CW",                      ID_PICTURE_ROTATE_90CW
+            MENUITEM "90 CC&W",                     ID_PICTURE_ROTATE_90CCW
+            MENUITEM "&180",                        ID_PICTURE_ROTATE_180
+            MENUITEM "&Free",                       ID_PICTURE_ROTATE_FREE
+            MENUITEM SEPARATOR
+            MENUITEM "&Horizontal",                 ID_PICTURE_FLIP_HORIZONTAL
+            MENUITEM "&Vertical",                   ID_PICTURE_FLIP_VERTICAL
+        END
+        POPUP "&Order and Group"
+        BEGIN
+            MENUITEM "&Send to back",               ID_ORDER_SENDTOBACK
+            MENUITEM "&Bring to front",             ID_ORDER_BRINGTOFRONT
+            MENUITEM "Send Ba&ckward",              ID_ORDER_SENDONEBACK
+            MENUITEM "Bring &Forward",              ID_ORDER_SENDONEFORE
+            MENUITEM SEPARATOR
+            MENUITEM "&Group\tCtrl+G",              ID_GROUP_GROUP
+            MENUITEM "&Ungroup\tCtrl+Shift+G",      ID_GROUP_UNGROUP
+        END
+        POPUP "&Align"
+        BEGIN
+            MENUITEM "&Left",                       ID_OBJECT_ALIGN_LEFT
+            MENUITEM "&Center",                     ID_OBJECT_ALIGN_CENTER
+            MENUITEM "Right",                       ID_OBJECT_ALIGN_RIGHT
+            MENUITEM "&Top",                        ID_OBJECT_ALIGN_TOP
+            MENUITEM "&middle",                     ID_OBJECT_ALIGN_MIDDLE
+            MENUITEM "&Bottom",                     ID_OBJECT_ALIGN_BOTTOM
+            MENUITEM "Distribute &Horizontally",    ID_OBJECT_ALIGN_DISTRIBUTEHORIZONTALLY
+            MENUITEM "Distribute &Vertically",      ID_OBJECT_ALIGN_DISTRIBUTEVERTICALLY
+            MENUITEM "Loc&k\tCtrl+L",               ID_OBJECT_ALIGN_LOCKOBJECT
+            MENUITEM "&Unlock\tCtrl+Shift+L",       ID_OBJECT_ALIGN_UNLOCK
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Select All\t Ctrl+A",         ID_EDIT_SELECTALL
+    END
+    POPUP "Text"
+    BEGIN
+        MENUITEM "&Edit Text...",               ID_TEXT_EDITTEXT
+        MENUITEM "&Font",                       ID_TEXT_FONT
+        POPUP "Justify"
+        BEGIN
+            MENUITEM "Align Left",                  ID_OBJECT_TEXT_ALIGNLEFT
+            MENUITEM "Align Center",                ID_OBJECT_TEXT_ALIGNCENTER
+            MENUITEM "Align Right",                 ID_OBJECT_TEXT_ALIGNRIGHT
+        END
+        MENUITEM "&Back Color...",              ID_OBJECT_BACKCOLOR
+        MENUITEM "&Fore Color...",              ID_OBJECT_FORECOLOR
+        MENUITEM "&Fill...",                    ID_SHAPE_FILL
+        MENUITEM "&Size...",                    ID_PICTURE_SIZE
+        MENUITEM "&Show Points",                ID_SHAPE_SHOWPOINTS
+        MENUITEM "S&hadow...",                  ID_OBJECT_PICTURE_SHADOW
+        POPUP "&Rotate and Flip"
+        BEGIN
+            MENUITEM "90 &CW",                      ID_PICTURE_ROTATE_90CW
+            MENUITEM "90 CC&W",                     ID_PICTURE_ROTATE_90CCW
+            MENUITEM "&180",                        ID_PICTURE_ROTATE_180
+            MENUITEM "&Free",                       ID_PICTURE_ROTATE_FREE
+            MENUITEM SEPARATOR
+            MENUITEM "&Horizontal",                 ID_PICTURE_FLIP_HORIZONTAL
+            MENUITEM "&Vertical",                   ID_PICTURE_FLIP_VERTICAL
+        END
+        POPUP "&Order and Group"
+        BEGIN
+            MENUITEM "&Send to back",               ID_ORDER_SENDTOBACK
+            MENUITEM "&Bring to front",             ID_ORDER_BRINGTOFRONT
+            MENUITEM "Send Ba&ckward",              ID_ORDER_SENDONEBACK
+            MENUITEM "Bring &Forward",              ID_ORDER_SENDONEFORE
+            MENUITEM SEPARATOR
+            MENUITEM "&Group\tCtrl+G",              ID_GROUP_GROUP
+            MENUITEM "&Ungroup\tCtrl+Shift+G",      ID_GROUP_UNGROUP
+        END
+        POPUP "&Align"
+        BEGIN
+            MENUITEM "&Left",                       ID_OBJECT_ALIGN_LEFT
+            MENUITEM "&Center",                     ID_OBJECT_ALIGN_CENTER
+            MENUITEM "Right",                       ID_OBJECT_ALIGN_RIGHT
+            MENUITEM "&Top",                        ID_OBJECT_ALIGN_TOP
+            MENUITEM "&middle",                     ID_OBJECT_ALIGN_MIDDLE
+            MENUITEM "&Bottom",                     ID_OBJECT_ALIGN_BOTTOM
+            MENUITEM "Distribute &Horizontally",    ID_OBJECT_ALIGN_DISTRIBUTEHORIZONTALLY
+            MENUITEM "Distribute &Vertically",      ID_OBJECT_ALIGN_DISTRIBUTEVERTICALLY
+            MENUITEM "Loc&k\tCtrl+L",               ID_OBJECT_ALIGN_LOCKOBJECT
+            MENUITEM "&Unlock\tCtrl+Shift+L",       ID_OBJECT_ALIGN_UNLOCK
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Select All\t Ctrl+A",         ID_EDIT_SELECTALL
+    END
+    POPUP "Line"
+    BEGIN
+        POPUP "&Rotate and Flip"
+        BEGIN
+            MENUITEM "90 &CW",                      ID_PICTURE_ROTATE_90CW
+            MENUITEM "90 CC&W",                     ID_PICTURE_ROTATE_90CCW
+            MENUITEM "&180",                        ID_PICTURE_ROTATE_180
+            MENUITEM "&Free",                       ID_PICTURE_ROTATE_FREE
+            MENUITEM SEPARATOR
+            MENUITEM "&Horizontal",                 ID_PICTURE_FLIP_HORIZONTAL
+            MENUITEM "&Vertical",                   ID_PICTURE_FLIP_VERTICAL
+        END
+        MENUITEM "&Line Type...",               ID_LINE_LINE
+        MENUITEM "&Back Color...",              ID_OBJECT_BACKCOLOR
+        MENUITEM "&Fore Color...",              ID_OBJECT_FORECOLOR
+        MENUITEM "&Fill...",                    ID_SHAPE_FILL
+        MENUITEM "&Size...",                    ID_PICTURE_SIZE
+        MENUITEM "&Show Points",                ID_SHAPE_SHOWPOINTS
+        MENUITEM "S&hadow...",                  ID_OBJECT_PICTURE_SHADOW
+        POPUP "&Order and Group"
+        BEGIN
+            MENUITEM "&Send to back",               ID_ORDER_SENDTOBACK
+            MENUITEM "&Bring to front",             ID_ORDER_BRINGTOFRONT
+            MENUITEM "Send Ba&ckward",              ID_ORDER_SENDONEBACK
+            MENUITEM "Bring &Forward",              ID_ORDER_SENDONEFORE
+            MENUITEM SEPARATOR
+            MENUITEM "&Group\tCtrl+G",              ID_GROUP_GROUP
+            MENUITEM "&Ungroup\tCtrl+Shift+G",      ID_GROUP_UNGROUP
+        END
+        POPUP "&Align"
+        BEGIN
+            MENUITEM "&Left",                       ID_OBJECT_ALIGN_LEFT
+            MENUITEM "&Center",                     ID_OBJECT_ALIGN_CENTER
+            MENUITEM "Right",                       ID_OBJECT_ALIGN_RIGHT
+            MENUITEM "&Top",                        ID_OBJECT_ALIGN_TOP
+            MENUITEM "&middle",                     ID_OBJECT_ALIGN_MIDDLE
+            MENUITEM "&Bottom",                     ID_OBJECT_ALIGN_BOTTOM
+            MENUITEM "Distribute &Horizontally",    ID_OBJECT_ALIGN_DISTRIBUTEHORIZONTALLY
+            MENUITEM "Distribute &Vertically",      ID_OBJECT_ALIGN_DISTRIBUTEVERTICALLY
+            MENUITEM "Loc&k\tCtrl+L",               ID_OBJECT_ALIGN_LOCKOBJECT
+            MENUITEM "&Unlock\tCtrl+Shift+L",       ID_OBJECT_ALIGN_UNLOCK
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Select All\t Ctrl+A",         ID_EDIT_SELECTALL
+    END
+    POPUP "Shape"
+    BEGIN
+        MENUITEM "&Back Color...",              ID_OBJECT_BACKCOLOR
+        MENUITEM "&Fore Color...",              ID_OBJECT_FORECOLOR
+        MENUITEM "&Line Type...",               ID_LINE_LINE
+        MENUITEM "&Fill...",                    ID_SHAPE_FILL
+        MENUITEM "&Size...",                    ID_PICTURE_SIZE
+        MENUITEM "&Show Points",                ID_SHAPE_SHOWPOINTS
+        MENUITEM "S&hadow...",                  ID_OBJECT_PICTURE_SHADOW
+        POPUP "&Rotate and Flip"
+        BEGIN
+            MENUITEM "90 &CW",                      ID_PICTURE_ROTATE_90CW
+            MENUITEM "90 CC&W",                     ID_PICTURE_ROTATE_90CCW
+            MENUITEM "&180",                        ID_PICTURE_ROTATE_180
+            MENUITEM "&Free",                       ID_PICTURE_ROTATE_FREE
+            MENUITEM SEPARATOR
+            MENUITEM "&Horizontal",                 ID_PICTURE_FLIP_HORIZONTAL
+            MENUITEM "&Vertical",                   ID_PICTURE_FLIP_VERTICAL
+        END
+        POPUP "&Order and Group"
+        BEGIN
+            MENUITEM "&Send to back",               ID_ORDER_SENDTOBACK
+            MENUITEM "&Bring to front",             ID_ORDER_BRINGTOFRONT
+            MENUITEM "Send Ba&ckward",              ID_ORDER_SENDONEBACK
+            MENUITEM "Bring &Forward",              ID_ORDER_SENDONEFORE
+            MENUITEM SEPARATOR
+            MENUITEM "&Group\tCtrl+G",              ID_GROUP_GROUP
+            MENUITEM "&Ungroup\tCtrl+Shift+G",      ID_GROUP_UNGROUP
+        END
+        POPUP "&Align"
+        BEGIN
+            MENUITEM "&Left",                       ID_OBJECT_ALIGN_LEFT
+            MENUITEM "&Center",                     ID_OBJECT_ALIGN_CENTER
+            MENUITEM "Right",                       ID_OBJECT_ALIGN_RIGHT
+            MENUITEM "&Top",                        ID_OBJECT_ALIGN_TOP
+            MENUITEM "&middle",                     ID_OBJECT_ALIGN_MIDDLE
+            MENUITEM "&Bottom",                     ID_OBJECT_ALIGN_BOTTOM
+            MENUITEM "Distribute &Horizontally",    ID_OBJECT_ALIGN_DISTRIBUTEHORIZONTALLY
+            MENUITEM "Distribute &Vertically",      ID_OBJECT_ALIGN_DISTRIBUTEVERTICALLY
+            MENUITEM "Loc&k\tCtrl+L",               ID_OBJECT_ALIGN_LOCKOBJECT
+            MENUITEM "&Unlock\tCtrl+Shift+L",       ID_OBJECT_ALIGN_UNLOCK
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Select All\t Ctrl+A",         ID_EDIT_SELECTALL
+    END
+    POPUP "General"
+    BEGIN
+        MENUITEM "&Size...",                    ID_PICTURE_SIZE
+        MENUITEM "S&hadow...",                  ID_OBJECT_PICTURE_SHADOW
+        POPUP "&Rotate and Flip"
+        BEGIN
+            MENUITEM "90 &CW",                      ID_PICTURE_ROTATE_90CW
+            MENUITEM "90 CC&W",                     ID_PICTURE_ROTATE_90CCW
+            MENUITEM "&180",                        ID_PICTURE_ROTATE_180
+            MENUITEM "&Free",                       ID_PICTURE_ROTATE_FREE
+            MENUITEM SEPARATOR
+            MENUITEM "&Horizontal",                 ID_PICTURE_FLIP_HORIZONTAL
+            MENUITEM "&Vertical",                   ID_PICTURE_FLIP_VERTICAL
+        END
+        POPUP "&Order and Group"
+        BEGIN
+            MENUITEM "&Send to back",               ID_ORDER_SENDTOBACK
+            MENUITEM "&Bring to front",             ID_ORDER_BRINGTOFRONT
+            MENUITEM "Send Ba&ckward",              ID_ORDER_SENDONEBACK
+            MENUITEM "Bring &Forward",              ID_ORDER_SENDONEFORE
+            MENUITEM SEPARATOR
+            MENUITEM "&Group\tCtrl+G",              ID_GROUP_GROUP
+            MENUITEM "&Ungroup\tCtrl+Shift+G",      ID_GROUP_UNGROUP
+        END
+        POPUP "&Align"
+        BEGIN
+            MENUITEM "&Left",                       ID_OBJECT_ALIGN_LEFT
+            MENUITEM "&Center",                     ID_OBJECT_ALIGN_CENTER
+            MENUITEM "Right",                       ID_OBJECT_ALIGN_RIGHT
+            MENUITEM "&Top",                        ID_OBJECT_ALIGN_TOP
+            MENUITEM "&middle",                     ID_OBJECT_ALIGN_MIDDLE
+            MENUITEM "&Bottom",                     ID_OBJECT_ALIGN_BOTTOM
+            MENUITEM "Distribute &Horizontally",    ID_OBJECT_ALIGN_DISTRIBUTEHORIZONTALLY
+            MENUITEM "Distribute &Vertically",      ID_OBJECT_ALIGN_DISTRIBUTEVERTICALLY
+            MENUITEM "Loc&k\tCtrl+L",               ID_OBJECT_ALIGN_LOCKOBJECT
+            MENUITEM "&Unlock\tCtrl+Shift+L",       ID_OBJECT_ALIGN_UNLOCK
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Select All\t Ctrl+A",         ID_EDIT_SELECTALL
+    END
+    POPUP "Background"
+    BEGIN
+        MENUITEM "&Background...",              ID_PAGE_BACKGROUND
+        MENUITEM SEPARATOR
+        MENUITEM "&Reset Zoom\tCtrl+T",         ID_PAGE_RESETZOOM
+        MENUITEM "Zoom &In\tCtrl+Plus",         ID_PAGE_ZOOMIN
+        MENUITEM "Zoom &Out\tCtrl+Minus",       ID_PAGE_ZOOMOUT
+        MENUITEM "&Fit To Window\tCtrl+W",      ID_PAGE_FITTOWINDOW
+        MENUITEM "Fit To &Width\tCtrl+E",       ID_PAGE_FITTOWIDTH
+        MENUITEM "&Fit To &Height\tCtrl+D",     ID_PAGE_FITTOHEIGHT
+        MENUITEM SEPARATOR
+        MENUITEM "Show Rulers\tCtrl+R",         ID_VIEW_RULLERS
+        MENUITEM "Show Grid\tCtrl+[",           ID_VIEW_GRID
+        MENUITEM "Snap To Grid\tCtrl+]",        ID_VIEW_SNAP2GRID
+        MENUITEM "Grid Properties...",          ID_VIEW_GRID_PROPERTIES
+        MENUITEM "Show Guides\tCtrl+9",         ID_VIEW_GUIDES
+        MENUITEM "Snap To Guides\tCtrl+0",      ID_VIEW_SNAP2GUIDES
+        MENUITEM "Lock Guides\tCtrl+8",         ID_VIEW_LOCK_GUIDES
+        MENUITEM SEPARATOR
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Select All\t Ctrl+A",         ID_EDIT_SELECTALL
+    END
+    POPUP "Pic Mapping"
+    BEGIN
+        MENUITEM "Reset &Mapping Area",         ID_PICMAPPING_RESETMAPPINGAREA
+        MENUITEM "&Remove Photo",               ID_PICMAPPING_REMOVEPHOTO
+        MENUITEM SEPARATOR
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Select All\t Ctrl+A",         ID_EDIT_SELECTALL
+    END
+    POPUP "Text Mapping"
+    BEGIN
+        MENUITEM "Reset &Mapping Area",         ID_PICMAPPING_RESETMAPPINGAREA
+        MENUITEM SEPARATOR
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete\tDel",                ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Select All\t Ctrl+A",         ID_EDIT_SELECTALL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "-",            ID_TOOL_FREEHAND_CLOSED, ASCII, NOINVERT
+    "0",            ID_TOOL_FREEHAND,       VIRTKEY, NOINVERT
+    "0",            ID_VIEW_SNAP2GUIDES,    VIRTKEY, CONTROL, NOINVERT
+    27,             ID_VIEW_GRID,           ASCII,  NOINVERT
+    29,             ID_VIEW_SNAP2GRID,      ASCII,  NOINVERT
+    "1",            ID_TOOL_SELECT,         VIRTKEY, NOINVERT
+    "2",            ID_TOOL_DRAG_DROP,      VIRTKEY, NOINVERT
+    "3",            ID_TOOL_ROTATE,         VIRTKEY, NOINVERT
+    "4",            ID_TOOL_TEXT,           VIRTKEY, NOINVERT
+    "5",            ID_TOOL_LINE,           VIRTKEY, NOINVERT
+    "6",            ID_TOOL_ELLIPSE,        VIRTKEY, NOINVERT
+    "7",            ID_TOOL_RECT,           VIRTKEY, NOINVERT
+    "8",            ID_TOOL_POLYLINE,       VIRTKEY, NOINVERT
+    "8",            ID_VIEW_LOCK_GUIDES,    VIRTKEY, CONTROL, NOINVERT
+    "9",            ID_TOOL_POLYGON,        VIRTKEY, NOINVERT
+    "9",            ID_VIEW_GUIDES,         VIRTKEY, CONTROL, NOINVERT
+    "=",            ID_TOOL_SHAPE,          ASCII,  NOINVERT
+    "A",            ID_EDIT_SELECTALL,      VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_PAGE_FITTOHEIGHT,    VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_PAGE_FITTOWIDTH,     VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_GROUP_GROUP,         VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_GROUP_UNGROUP,       VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "L",            ID_OBJECT_ALIGN_LOCKOBJECT, VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_OBJECT_ALIGN_UNLOCK, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_TOOL_ZOOM_RECT,      VIRTKEY, NOINVERT
+    "R",            ID_VIEW_RULLERS,        VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_PAGE_RESETZOOM,      VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_ADD,         ID_PAGE_ZOOMIN,         VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETE,         VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F2,          ID_APSPAGEMENU_RENAMEPAGEF2, VIRTKEY, NOINVERT
+    VK_F5,          ID_LISTMENU_REFRESH,    VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_SPACE,       ID_CREATE_FRAME,        VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_SUBTRACT,    ID_PAGE_ZOOMOUT,        VIRTKEY, CONTROL, NOINVERT
+    "W",            ID_TOOL_PANIMAGE,       VIRTKEY, NOINVERT
+    "W",            ID_PAGE_FITTOWINDOW,    VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_REDO,           VIRTKEY, SHIFT, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 236, 58
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About VecDemo"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "VecDemo Version ",IDC_STATIC,40,10,39,8,SS_NOPREFIX
+    LTEXT           "1.0.6",IDC_STATIC,82,10,31,8,SS_NOPREFIX
+    LTEXT           "Copyright Monfort Software (C) 1999 - 2007",IDC_STATIC,40,25,174,8
+    DEFPUSHBUTTON   "OK",IDOK,176,4,50,14,WS_GROUP
+END
+
+IDD_LINE_TYPE DIALOGEX 0, 0, 167, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Line Type"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "&Width:",IDC_STATIC,9,10,22,8
+    EDITTEXT        IDC_LINE_WIDTH,35,7,40,14,ES_AUTOHSCROLL
+    LTEXT           "(points)",IDC_STATIC,79,10,24,8
+    LTEXT           "&Style:",IDC_STATIC,7,26,18,8
+    LISTBOX         IDC_LINE_STYLE,7,36,153,79,LBS_NOINTEGRALHEIGHT | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,21,122,42,14
+    PUSHBUTTON      "Apply",IDAPPLY,69,122,42,14
+    PUSHBUTTON      "Close",IDCANCEL,118,122,42,14
+END
+
+IDD_EDIT_TEXT DIALOGEX 0, 0, 290, 164
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Text"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,276,130,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,145,143,42,14
+    PUSHBUTTON      "Apply",IDAPPLY,193,143,42,14
+    PUSHBUTTON      "Close",IDCANCEL,241,143,42,14
+END
+
+IDD_SHAPE_FILL DIALOGEX 0, 0, 167, 188
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Fill"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "&Mode:",IDC_STATIC,7,7,21,8
+    LISTBOX         IDC_FILL_MODE,7,16,153,40,LBS_NOINTEGRALHEIGHT | WS_TABSTOP
+    LTEXT           "&Pattern:",IDC_STATIC,7,62,26,8
+    LISTBOX         IDC_FILL_PATTERN,7,72,153,89,LBS_NOINTEGRALHEIGHT | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,22,167,42,14
+    PUSHBUTTON      "Apply",IDAPPLY,70,167,42,14
+    PUSHBUTTON      "Close",IDCANCEL,118,167,42,14
+END
+
+IDD_ROTATE_FREE DIALOGEX 0, 0, 139, 49
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Rotate"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "&Angle:",IDC_STATIC,7,10,21,8
+    EDITTEXT        IDC_EDIT2,32,7,40,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,73,7,11,14
+    DEFPUSHBUTTON   "Apply",IDAPPLY,42,28,42,14
+    PUSHBUTTON      "Close",IDCANCEL,90,28,42,14
+END
+
+IDD_PAGE_BACKGROUND DIALOGEX 0, 0, 281, 202
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Page Background"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,267,115
+    CONTROL         "&Background Image",IDC_BGIMG_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,15,7,76,10
+    GROUPBOX        "",IDC_STATIC,7,128,267,35
+    CONTROL         "Solid &Color",IDC_SOLIDCOL_RADIO,"Button",BS_AUTORADIOBUTTON,15,128,49,10
+    EDITTEXT        IDC_BACK_IMAGE_BROWSE,16,19,233,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,135,181,42,14
+    PUSHBUTTON      "Apply",IDAPPLY,183,181,42,14
+    PUSHBUTTON      "Close",IDCANCEL,232,181,42,14
+    PUSHBUTTON      "",IDC_COLOR_BUTTON,16,142,80,13
+    PUSHBUTTON      "...",IDC_BUTTON_FILEOPEN,252,19,15,14
+END
+
+IDD_PAGE_TYPE DIALOG  0, 0, 244, 134
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blank Page"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Page Properties",IDC_STATIC,7,7,136,92
+    LTEXT           "Paper &Size:",IDC_STATIC,20,20,37,8
+    COMBOBOX        IDC_PAGE_SIZE_COMBO,32,31,99,44,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Orientation:",IDC_STATIC,20,50,37,8
+    CONTROL         "&Portrait",IDC_PORTRAIT_RADIO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,30,60,38,10
+    CONTROL         "&Landscape",IDC_LANDSCAPE_RADIO,"Button",BS_AUTORADIOBUTTON,78,60,51,10
+    GROUPBOX        "Preview",IDC_STATIC,153,7,84,93
+    CONTROL         204,IDC_PREVIEW,"Static",SS_BITMAP | SS_SUNKEN,164,27,68,63
+    DEFPUSHBUTTON   "OK",IDOK,149,106,42,14
+    PUSHBUTTON      "Cancel",IDCANCEL,195,106,42,14
+END
+
+IDD_PICTURE_SIZE DIALOG  0, 0, 196, 102
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Size"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Width",IDC_STATIC,7,7,20,8
+    EDITTEXT        IDC_WIDTH,7,17,74,14,ES_AUTOHSCROLL
+    LTEXT           "&Units",IDC_STATIC,88,7,17,8
+    COMBOBOX        IDC_WIDTH_UNITS,88,17,67,44,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Height",IDC_STATIC,7,36,22,8
+    EDITTEXT        IDC_HEIGHT,7,47,74,14,ES_AUTOHSCROLL
+    LTEXT           "U&nits",IDC_STATIC,88,36,17,8
+    COMBOBOX        IDC_HEIGHT_UNITS,88,47,67,57,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Constrain &Proportions",IDC_PROPORTIONS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,67,83,10
+    DEFPUSHBUTTON   "OK",IDOK,51,81,42,14
+    PUSHBUTTON      "Apply",IDAPPLY,99,81,42,14
+    PUSHBUTTON      "Close",IDCANCEL,147,81,42,14
+END
+
+IDD_GRID_PROP DIALOG  0, 0, 188, 58
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Grid Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,76,37,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,131,37,50,14
+    LTEXT           "&Size",IDC_STATIC,7,7,14,8
+    EDITTEXT        IDC_WIDTH,7,17,74,14,ES_AUTOHSCROLL
+    LTEXT           "&Units",IDC_STATIC,88,7,17,8
+    COMBOBOX        IDC_WIDTH_UNITS,88,17,67,44,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SHADOW_DLG DIALOG  0, 0, 186, 127
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,172,94
+    CONTROL         "Use Shadow",IDC_USE_SHADOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,7,57,10
+    LTEXT           "&X",IDC_STATIC,13,21,8,8
+    EDITTEXT        IDC_WIDTH,13,31,74,14,ES_AUTOHSCROLL
+    LTEXT           "&Units",IDC_STATIC,94,21,17,8
+    COMBOBOX        IDC_WIDTH_UNITS,94,31,67,44,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Y",IDC_STATIC,13,50,8,8
+    EDITTEXT        IDC_HEIGHT,13,61,74,14,ES_AUTOHSCROLL
+    LTEXT           "U&nits",IDC_STATIC,94,50,17,8
+    COMBOBOX        IDC_HEIGHT_UNITS,94,61,67,57,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Translucent",IDC_ROP2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,100,81,53,10
+    DEFPUSHBUTTON   "OK",IDOK,40,106,42,14
+    PUSHBUTTON      "Apply",IDAPPLY,88,106,42,14
+    PUSHBUTTON      "Close",IDCANCEL,137,106,42,14
+    PUSHBUTTON      "",IDC_COLOR_BUTTON,13,80,80,13
+END
+
+IDD_PIC_TRANSPARENT_DLG DIALOG  0, 0, 153, 79
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Picture Transparency"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,139,46
+    CONTROL         "&Transparent",IDC_IS_TRANSPARENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,7,54,10
+    LTEXT           "Transparent &Color",IDC_STATIC,13,19,98,8
+    DEFPUSHBUTTON   "OK",IDOK,7,58,42,14
+    PUSHBUTTON      "Apply",IDAPPLY,55,58,42,14
+    PUSHBUTTON      "Close",IDCANCEL,104,58,42,14
+    PUSHBUTTON      "",IDC_COLOR_BUTTON,15,32,80,13
+END
+
+IDD_SHAPESBOX DIALOG  0, 0, 192, 178
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,6,0
+ PRODUCTVERSION 1,0,6,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "VecDemo MFC Application"
+            VALUE "FileVersion", "1.0.6"
+            VALUE "InternalName", "VecDemo"
+            VALUE "LegalCopyright", "Copyright (C) 1999"
+            VALUE "OriginalFilename", "VecDemo.EXE"
+            VALUE "ProductName", "VecDemo Application"
+            VALUE "ProductVersion", "1.0.6"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_LINE_TYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_EDIT_TEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_SHAPE_FILL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_ROTATE_FREE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_PAGE_BACKGROUND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        VERTGUIDE, 16
+        VERTGUIDE, 22
+        VERTGUIDE, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+        HORZGUIDE, 40
+        HORZGUIDE, 116
+        HORZGUIDE, 128
+    END
+
+    IDD_PAGE_TYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        VERTGUIDE, 20
+        VERTGUIDE, 30
+        VERTGUIDE, 55
+        VERTGUIDE, 75
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_PICTURE_SIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        VERTGUIDE, 81
+        VERTGUIDE, 88
+        VERTGUIDE, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+        HORZGUIDE, 31
+        HORZGUIDE, 61
+    END
+
+    IDD_GRID_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_SHADOW_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        VERTGUIDE, 13
+        VERTGUIDE, 94
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_PIC_TRANSPARENT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 146
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_SHAPESBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 188
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 174
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Vector Engine Test\n\nVector Engine Test\nPages (*.alb)\n.alb\nVecDemo.Document\nVecDemo Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Vector Engine Test"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new Page\nNew (Ctrl+N)"
+    ID_FILE_OPEN            "Open an existing Page\nOpen (Ctrl+O)"
+    ID_FILE_CLOSE           "Close the active Page\nClose"
+    ID_FILE_SAVE            "Save the active Page\nSave (Ctrl+S)"
+    ID_FILE_SAVE_AS         "Save the active Page with a new name\nSave As"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active Page\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP                 "Help\nHelp"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy (Ctrl+C)"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut (Ctrl+X)"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste (Ctrl+V)"
+    ID_EDIT_UNDO            "Undo the last action\nUndo (Ctrl+Z)"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo (Ctrl+Y)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GRID_TOO_SMALL      "The Grid is too small, plase increase its size.\nThe minimum size is: 0.05 Inch or 0.127 CM."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_DELETE          "Delete the selection\nDelete (Del)"
+    ID_EDIT_SELECTALL       "Select All\nSelect All (Ctrl+A)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOL_SELECT          "Select / Modify Objects\nSelect (1)"
+    ID_TOOL_DRAG_DROP       "Drag and Drop items to outside of the editor\nDrag and Drop (2)"
+    ID_TOOL_ROTATE          "Rotate\nRotate (3)"
+    ID_TOOL_TEXT            "Create a new text object\nText (4)"
+    ID_TOOL_LINE            "Create a new line object\nLine (5)"
+    ID_TOOL_ELLIPSE         "Create a new ellipse object\nEllipse (6)"
+    ID_TOOL_RECT            "Create a new rectangle object\nRectangle (7)"
+    ID_TOOL_POLYLINE        "Create a new polyline object\nPolyline (8)"
+    ID_TOOL_POLYGON         "Create a new polygon object\nPolygon (9)"
+    ID_TOOL_FREEHAND        "Create a new freehand object\nFreehand (0)"
+    ID_TOOL_FREEHAND_CLOSED "Create a new closed freehand object\nClosed Freehand (-)"
+    ID_TOOL_SHAPE           "Create a new Shape object\nShape (=)"
+    ID_PAGE_BACKGROUND      "Cheange the page Background\nBackground"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOL_ZOOM_RECT       "Zoom\nZoom (Q)"
+    ID_TOOL_PANIMAGE        "Pan\nPan (W)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PAGE_RESETZOOM       "Reset Zoom\nReset Zoom (Ctrl+T)"
+    ID_PAGE_FITTOWINDOW     "Fit Zoom to window\nFit Zoom to window (Ctrl+W)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ORDER_SENDTOBACK     "Send to back\nSend to back"
+    ID_ORDER_BRINGTOFRONT   "Bring to front\nBring to front"
+    ID_PICTURE_CROP_RECTANGLE "Crop rectangle\nCrop rectangle"
+    ID_PICTURE_CROP_ELLIPSE "Crop ellipse\nCrop ellipse"
+    ID_PICTURE_ROTATE_90CW  "Rotate 90 CW\nRotate 90 CW"
+    ID_PICTURE_ROTATE_90CCW "Rotate 90 CCW\nRotate 90 CCW"
+    ID_PICTURE_ROTATE_180   "Rotate 180\nRotate 180"
+    ID_PICTURE_ROTATE_FREE  "Rotate Free\nRotate Free"
+    ID_PICTURE_FLIP_VERTICAL "Flip Vertically\nFlip Vertically"
+    ID_PICTURE_FLIP_HORIZONTAL "Flip Horizontally\nFlip Horizontally"
+    ID_PAGE_FITTOWIDTH      "Fit Zoom to width\nFit Zoom to width (Ctrl+E)"
+    ID_PAGE_FITTOHEIGHT     "Fit Zoom to height\nFit Zoom to height (Ctrl+D)"
+    ID_VIEW_TOOLBARS_STANDARD 
+                            "Show or hide the Standard toolbar\nToggle Standard ToolBar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBARS_OBJECT "Show or hide the Object toolbar\nToggle Object ToolBar"
+    ID_VIEW_TOOLBARS_PAGE   "Show or hide the Page toolbar\nToggle PageToolBar"
+    ID_VIEW_TOOLBARS_ALIGN  "Show or hide the Align toolbar\nToggle Align ToolBar"
+    ID_VIEW_TOOLBARS_TOOLBOX "Show or hide the tool box\nToggle Tool Box"
+    ID_LISTMENU_REFRESH     "Refresh\nRefresh"
+    ID_OBJECT_BACKCOLOR     "Cheange the background Color\nBackground Color"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OBJECT_FORECOLOR     "Cheange the Foreground Color\nForeground Color"
+    ID_APSPAGEMENU_RENAMEPAGE "Rename Page\nRename Page"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_LINE_LINE            "Select line type (width and type)\nLine Type"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PAGE_ZOOMIN          "Zoom In\nZoom In (Ctrl+Plus)"
+    ID_PAGE_ZOOMOUT         "Zoom Out\nZoom Out (Ctrl+Minus)"
+    ID_TEXT_EDITTEXT        "Edit the text\nEdit Text"
+    ID_TEXT_BACKCOLOR       "Cheange the background Color\nBackground Color"
+    ID_TEXT_FORECOLOR       "Cheange the Foreground Color\nForeground Color"
+    ID_TEXT_FILL            "Select the fill type (transparent / solid)\nFill"
+    ID_TEXT_BORDERFRAME     "Select the Text Border Frame (width type and color)\nText Border Frame"
+    ID_TEXT_FONT            "Select Font\nFont"
+    ID_SHAPE_FILL           "Select the Shape fill type (transparent / solid)\nShape Fill"
+    ID_SHAPE_BACKCOLOR      "Cheange the background Color\nBackground Color"
+    ID_SHAPE_FORECOLOR      "Cheange the Foreground Color\nForeground Color"
+    ID_LINE_BACKCOLOR       "Cheange the background Color\nBackground Color"
+    ID_LINE_FORECOLOR       "Cheange the Foreground Color\nForeground Color"
+    ID_SHAPE_BORDERFRAME    "Select the Shape Border Frame (width and type)\nShape Border Frame"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PICTURE_SIZE         "Set the picture Size\nPicture Size"
+    ID_VIEW_RULLERS         "Show/Hide The Rulers\nShow/Hide The Rulers (Ctrl+R)"
+    ID_VIEW_GUIDES          "Show/Hide The Guides\nShow/Hide The Guides (Ctrl+9)"
+    ID_VIEW_GRID            "Show/Hide The Grid\nShow/Hide The Grid (Ctrl+[)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_SNAP2GUIDES     "Tollge on/off the Snap To Guides\nSnap To Guides (Ctrl+0)"
+    ID_VIEW_SNAP2GRID       "Tollge on/off the Snap To Grid\nSnap To Grid (Ctrl+])"
+    ID_VIEW_GRID_PROPERTIES "Grid Peoperties\nGrid Peoperties"
+    ID_ORDER_SENDONEBACK    "Send one backward\nSend one backward"
+    ID_ORDER_SENDONEFORE    "Bring one forward\nBring one forward"
+    ID_GROUP_GROUP          "Group\nGroup Items"
+    ID_GROUP_UNGROUP        "Ungroup\nUngroup Items"
+    ID_PICTURE_CROP_POLYGON "Crop polygon\nCrop polygon"
+    ID_PICTURE_CROP_FREEHAND "Crop freehand\nCrop freehand"
+    ID_PICTURE_CROP_SHAPE   "Crop shape\nCrop shape"
+    ID_VIEW_LOCK_GUIDES     "Lock / Unlock the guiedes\nLock / Unlock the guiedes (Ctrl+8)"
+    ID_OBJECT_TEXT_ALIGNLEFT "Align Text to left\nLeft"
+    ID_OBJECT_TEXT_ALIGNCENTER "Align text to center\nCenter"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OBJECT_TEXT_ALIGNRIGHT "Align text to right\nRight"
+    ID_OBJECT_ALIGN_LEFT    "Align to left\nLeft"
+    ID_OBJECT_ALIGN_CENTER  "Align to center\nCenter"
+    ID_OBJECT_ALIGN_RIGHT   "Align to right\nRight"
+    ID_OBJECT_ALIGN_TOP     "Align to top\nTop"
+    ID_OBJECT_ALIGN_MIDDLE  "Align to middle\nMiddle"
+    ID_OBJECT_ALIGN_BOTTOM  "Align to bottom\nBottom"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OBJECT_ALIGN_DISTRIBUTEHORIZONTALLY 
+                            "Distribute Horizontally\nDistribute Horizontally"
+    ID_OBJECT_ALIGN_DISTRIBUTEVERTICALLY 
+                            "Distribute Vertically\nDistribute Vertically"
+    ID_OBJECT_ALIGN_LOCKOBJECT "Lock\nLock (Ctrl+L)"
+    ID_OBJECT_ALIGN_UNLOCK  "Unlock\nUnlock (Ctrl+Shift+L)"
+    ID_PICMAPPING_REMOVEPHOTO "Remove Photo\nRemove Photo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PICMAPPING_RESETMAPPINGAREA "Reset Mapping Area\nReset Mapping Area"
+    ID_SHAPE_SHOWPOINTS     "Show / Hide the points\nShow Points"
+    ID_OBJECT_PICTURE_SHADOW "Add / Remove / Change the shadow\nShadow"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OBJECT_PICTURE_TRANSPARENCY "Picture transparency\nTransparency"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Hebrew resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HEB)
+#ifdef _WIN32
+LANGUAGE LANG_HEBREW, SUBLANG_DEFAULT
+#pragma code_page(1255)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PAGE_PORT           BITMAP                  "res\\PagePortTop.bmp"
+IDB_PAGE_LAND           BITMAP                  "res\\PageLandTop.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\r\n"
+    "\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\VecDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""VecEngine.rc""\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Hebrew resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\VecDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "VecEngine.rc"
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

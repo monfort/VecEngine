@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a991c5fe-313b-427d-a3d8-d5b20be8b050}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\VecClasses">
+      <UniqueIdentifier>{9825b2f6-1456-4fe8-8ec8-0a23177c61a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GenClasses">
+      <UniqueIdentifier>{a5295e71-78c5-4a0f-b866-5e0a68b7e8a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Trackers">
+      <UniqueIdentifier>{0915530a-0a13-491f-8504-b06f99b7a493}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{222f4ca3-d28c-4e2e-98a4-e8242cb99d94}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\VecClasses.">
+      <UniqueIdentifier>{c0b9a55c-1311-45e0-8cfe-9b204c5157c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GenClasses.">
+      <UniqueIdentifier>{80b7cb7c-ab37-4fa4-8e5a-3e983777e31a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Trackers.">
+      <UniqueIdentifier>{a9f7a85d-57a1-4b31-9b08-0b8f7070e5a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{a4ff2819-9692-4fd5-8f7d-1f5480d97ca9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecBase.cpp">
+      <Filter>Source Files\VecClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecBitmapBase.cpp">
+      <Filter>Source Files\VecClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecContainer.cpp">
+      <Filter>Source Files\VecClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecEllipse.cpp">
+      <Filter>Source Files\VecClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecEllipsePic.cpp">
+      <Filter>Source Files\VecClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecEllipseText.cpp">
+      <Filter>Source Files\VecClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecFrameContainer.cpp">
+      <Filter>Source Files\VecClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecLine.cpp">
+      <Filter>Source Files\VecClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecPointsBase.cpp">
+      <Filter>Source Files\VecClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecPolygon.cpp">
+      <Filter>Source Files\VecClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecPolygonPic.cpp">
+      <Filter>Source Files\VecClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecPolygonText.cpp">
+      <Filter>Source Files\VecClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecPolyline.cpp">
+      <Filter>Source Files\VecClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecRectangle.cpp">
+      <Filter>Source Files\VecClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecRectanglePic.cpp">
+      <Filter>Source Files\VecClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecRectangleText.cpp">
+      <Filter>Source Files\VecClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecTextBase.cpp">
+      <Filter>Source Files\VecClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BitmapBaseEx.cpp">
+      <Filter>Source Files\GenClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DragMan.cpp">
+      <Filter>Source Files\GenClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\G_Routines.cpp">
+      <Filter>Source Files\GenClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Guide.cpp">
+      <Filter>Source Files\GenClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MemBuffEx.cpp">
+      <Filter>Source Files\GenClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MHookWnd.cpp">
+      <Filter>Source Files\GenClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MRulerOrganizer.cpp">
+      <Filter>Source Files\GenClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SelectionManager.cpp">
+      <Filter>Source Files\GenClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shapes.cpp">
+      <Filter>Source Files\GenClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Snapper.cpp">
+      <Filter>Source Files\GenClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Text_Routines.cpp">
+      <Filter>Source Files\GenClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TextEditRect.cpp">
+      <Filter>Source Files\GenClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UndoManager.cpp">
+      <Filter>Source Files\GenClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecController.cpp">
+      <Filter>Source Files\GenClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecTypes.cpp">
+      <Filter>Source Files\GenClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecView.cpp">
+      <Filter>Source Files\GenClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VecWorkspace.cpp">
+      <Filter>Source Files\GenClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BaseTracker.cpp">
+      <Filter>Source Files\Trackers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EllipseTracker.cpp">
+      <Filter>Source Files\Trackers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LineTracker.cpp">
+      <Filter>Source Files\Trackers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MRectTracker.cpp">
+      <Filter>Source Files\Trackers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PicTracker.cpp">
+      <Filter>Source Files\Trackers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PolygonTracker.cpp">
+      <Filter>Source Files\Trackers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PolylineCreatorTracker.cpp">
+      <Filter>Source Files\Trackers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\RectangleTracker.cpp">
+      <Filter>Source Files\Trackers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SuperRotateTracker.cpp">
+      <Filter>Source Files\Trackers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SuperTracker.cpp">
+      <Filter>Source Files\Trackers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\VecEngine.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecBase.h">
+      <Filter>Header Files\VecClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecBitmapBase.h">
+      <Filter>Header Files\VecClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecContainer.h">
+      <Filter>Header Files\VecClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecEllipse.h">
+      <Filter>Header Files\VecClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecEllipsePic.h">
+      <Filter>Header Files\VecClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecEllipseText.h">
+      <Filter>Header Files\VecClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecFrameContainer.h">
+      <Filter>Header Files\VecClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecLine.h">
+      <Filter>Header Files\VecClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecPointsBase.h">
+      <Filter>Header Files\VecClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecPolygon.h">
+      <Filter>Header Files\VecClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecPolygonPic.h">
+      <Filter>Header Files\VecClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecPolygonText.h">
+      <Filter>Header Files\VecClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecPolyline.h">
+      <Filter>Header Files\VecClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecRectangle.h">
+      <Filter>Header Files\VecClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecRectanglePic.h">
+      <Filter>Header Files\VecClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecRectangleText.h">
+      <Filter>Header Files\VecClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecTextBase.h">
+      <Filter>Header Files\VecClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BitmapBaseEx.h">
+      <Filter>Header Files\GenClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DragMan.h">
+      <Filter>Header Files\GenClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\G_Routines.h">
+      <Filter>Header Files\GenClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Guide.h">
+      <Filter>Header Files\GenClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MemBuffEx.h">
+      <Filter>Header Files\GenClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MHookWnd.h">
+      <Filter>Header Files\GenClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MRulerOrganizer.h">
+      <Filter>Header Files\GenClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SelectionManager.h">
+      <Filter>Header Files\GenClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shapes.h">
+      <Filter>Header Files\GenClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Snapper.h">
+      <Filter>Header Files\GenClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Text_Routines.h">
+      <Filter>Header Files\GenClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TextEditRect.h">
+      <Filter>Header Files\GenClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UndoManager.h">
+      <Filter>Header Files\GenClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecController.h">
+      <Filter>Header Files\GenClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecTypes.h">
+      <Filter>Header Files\GenClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecView.h">
+      <Filter>Header Files\GenClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VecWorkspace.h">
+      <Filter>Header Files\GenClasses.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\BaseTracker.h">
+      <Filter>Header Files\Trackers.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EllipseTracker.h">
+      <Filter>Header Files\Trackers.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LineTracker.h">
+      <Filter>Header Files\Trackers.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MRectTracker.h">
+      <Filter>Header Files\Trackers.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PicTracker.h">
+      <Filter>Header Files\Trackers.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PolygonTracker.h">
+      <Filter>Header Files\Trackers.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PolylineCreatorTracker.h">
+      <Filter>Header Files\Trackers.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RectangleTracker.h">
+      <Filter>Header Files\Trackers.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SuperRotateTracker.h">
+      <Filter>Header Files\Trackers.</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SuperTracker.h">
+      <Filter>Header Files\Trackers.</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\res\Copy4way.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\create_c.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\crop_cur.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\guide_ho.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\guide_ve.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\locked.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\locked_o.bmp">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\my_move_.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\my_set_s.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\pan.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\pan_act.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\pic_move.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\pic_resi.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\pic_rota.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\Trck4way.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\Trcknesw.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\Trckns.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\Trcknwse.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\Trckwe.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\zoom_in.cur">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="..\res\zoom_out.cur">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+</Project>

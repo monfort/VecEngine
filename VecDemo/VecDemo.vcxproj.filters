@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3bc858c5-1aad-4552-a116-5e2a21500963}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\GUI">
+      <UniqueIdentifier>{a16d6009-ffb3-4828-87ed-95f8ebe8fc6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FrameWork">
+      <UniqueIdentifier>{ec144616-46b3-4d52-a966-d0a6bce6c20f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\General">
+      <UniqueIdentifier>{90ca4346-5a48-4c1c-a5ff-737ca658d38e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9ed028fd-8369-42ac-8e16-9c92f331ec1d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\GUI.">
+      <UniqueIdentifier>{c8b156a0-6c9d-460b-8fcd-a1a952c04f42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\FrameWork.">
+      <UniqueIdentifier>{79c9af68-b665-4290-9ef6-7a90ab529654}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\General.">
+      <UniqueIdentifier>{f70dbabe-3f3d-40cd-99c5-a49608837b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{1dffda79-6220-4143-bb19-e1a863603d40}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GridPropDlg.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="LineTypeDlg.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="NewPagePropDlg.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="PageBackgroundDlg.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="PicTransparentDlg.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="PictureSizeDlg.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="RotateFreeDlg.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowDlg.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapeFillDlg.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapesDlg.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="TextEditDlg.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="VecDemoDoc.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="VecDemoView.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files\FrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files\FrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="VecDemo.cpp">
+      <Filter>Source Files\FrameWork</Filter>
+    </ClCompile>
+    <ClCompile Include="GobalBuffer.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="MemBuff.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="NodedArchive.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VecDemo.rc">
+      <Filter>Source Files\FrameWork</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GridPropDlg.h">
+      <Filter>Header Files\GUI.</Filter>
+    </ClInclude>
+    <ClInclude Include="LineTypeDlg.h">
+      <Filter>Header Files\GUI.</Filter>
+    </ClInclude>
+    <ClInclude Include="NewPagePropDlg.h">
+      <Filter>Header Files\GUI.</Filter>
+    </ClInclude>
+    <ClInclude Include="PageBackgroundDlg.h">
+      <Filter>Header Files\GUI.</Filter>
+    </ClInclude>
+    <ClInclude Include="PicTransparentDlg.h">
+      <Filter>Header Files\GUI.</Filter>
+    </ClInclude>
+    <ClInclude Include="PictureSizeDlg.h">
+      <Filter>Header Files\GUI.</Filter>
+    </ClInclude>
+    <ClInclude Include="RotateFreeDlg.h">
+      <Filter>Header Files\GUI.</Filter>
+    </ClInclude>
+    <ClInclude Include="ShadowDlg.h">
+      <Filter>Header Files\GUI.</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapeFillDlg.h">
+      <Filter>Header Files\GUI.</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapesDlg.h">
+      <Filter>Header Files\GUI.</Filter>
+    </ClInclude>
+    <ClInclude Include="TextEditDlg.h">
+      <Filter>Header Files\GUI.</Filter>
+    </ClInclude>
+    <ClInclude Include="VecDemoDoc.h">
+      <Filter>Header Files\GUI.</Filter>
+    </ClInclude>
+    <ClInclude Include="VecDemoView.h">
+      <Filter>Header Files\GUI.</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files\FrameWork.</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files\FrameWork.</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files\FrameWork.</Filter>
+    </ClInclude>
+    <ClInclude Include="VecDemo.h">
+      <Filter>Header Files\FrameWork.</Filter>
+    </ClInclude>
+    <ClInclude Include="GobalBuffer.h">
+      <Filter>Header Files\General.</Filter>
+    </ClInclude>
+    <ClInclude Include="MemBuff.h">
+      <Filter>Header Files\General.</Filter>
+    </ClInclude>
+    <ClInclude Include="NodedArchive.h">
+      <Filter>Header Files\General.</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\VecEngine\res\Copy4way.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\create_c.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\crop_cur.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\guide_ho.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\guide_ve.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\locked_o.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\my_move_.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\my_set_s.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\pan.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\pan_act.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\pic_move.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\pic_resi.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\pic_rota.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\shapes_b.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbar_align.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbar_Object.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbar_page.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbox.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\Trck4way.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\Trcknesw.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\Trckns.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\Trcknwse.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\Trckwe.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\VecDemo.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\VecDemo.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\VecDemoDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\zoom_in.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\VecEngine\res\zoom_out.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
