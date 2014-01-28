@@ -1,3 +1,9 @@
+/*
+    * VecEngine - A Win32 vector drawings editing library.
+    * Distributed under the LGPL License, see accompanying LICENSE
+    * (C) Copyright 2014 Monfort Software Engineering Ltd. http://monfort.co.il
+*/ 
+
 #if !defined(AFX_TEXTEDITRECT_H__73CADF33_C65B_11D3_A4A0_00C0CA1261A6__INCLUDED_)
 #define AFX_TEXTEDITRECT_H__73CADF33_C65B_11D3_A4A0_00C0CA1261A6__INCLUDED_
 

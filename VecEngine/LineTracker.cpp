@@ -1,3 +1,9 @@
+/*
+    * VecEngine - A Win32 vector drawings editing library.
+    * Distributed under the LGPL License, see accompanying LICENSE
+    * (C) Copyright 2014 Monfort Software Engineering Ltd. http://monfort.co.il
+*/ 
+
 // LineTracker.cpp: implementation of the CLineTracker class.
 //
 //////////////////////////////////////////////////////////////////////
