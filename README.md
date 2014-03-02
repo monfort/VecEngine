@@ -8,7 +8,7 @@
 <li>Grid, Guide, Rulers. (with support for snapping)</li>
 <li>Embedding / cropping Images</li>
 <li>Embedding / cropping Text</li>
-<li>Color, shadow, line style (e.g. dashed), fill pattern, foreground / background color, transparency and translucency, drop shadow</li>
+<li>Color (foreground / background), line style (e.g. dashed), fill pattern, transparency and translucency, drop shadow</li>
 <li>Drag & Drop, Copy/Paste</li>
 <li>Save/Load files</li>
 <li>Advanced Undo/Redo</li>
